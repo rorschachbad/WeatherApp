@@ -10,14 +10,11 @@ console.log(readable);
 
 const wetherInfoContent = document.querySelector('.weather-info-content');
 
-const date = new Date();
+// const date = new Date();
 
 async function getWeatherCardData() {
     const response = await fetch('http://api.weatherapi.com/v1/current.json?key=27ee5d2bbc35470e831125920242803&q=Belarus&aqi=no');
     const data = await response.json();
-
-    const day = date.getDay();
-    const month = date.getMonth();
 
     const temp = data.current.temp_c < 0 ? '-' + data.current.temp_c : '+' + data.current.temp_c;
 
