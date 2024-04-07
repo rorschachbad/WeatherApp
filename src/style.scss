@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul, li {
+    list-style-type: none;
+}
+
+body {
+    background: url('./img/thesky.jpeg') no-repeat center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header {
+    border: 1px solid black;
+    background-color: rgba(85, 211, 211, 0.6);
+    color: rgb(41, 131, 209);
+    margin-bottom: 50px;
+    input {
+        outline: none;
+        padding: 5px;
+    }
+    .navigation {
+    }
+    .navigation-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color: aliceblue;
+    }
+    .navigation-list-item {
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .navigation-list-item:hover {
+        background-color: rgb(95, 205, 196);
+    }
+}
+
+.weather-info-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.weather {
+    border: 2px solid rgb(95, 205, 196);
+    border-radius: 5px;
+    width: 31%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-image {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+.weather-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.weather-info-date {
+
+}
+
+.weather-info-temperature {
+}
+
+.weather-info-current-temperature {
+    background-color: rgba(12, 178, 12, 0.6);
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.weather-info-today-temperature {
+    background-color: rgba(86, 226, 86, 0.6);
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.weather-info-day {
+    margin-bottom: 10px;
+}
